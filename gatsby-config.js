@@ -1,7 +1,11 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "hiyori",
+    siteUrl: "https://near-closer.jp",
+    title: "near-closer",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -9,7 +13,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: "UA-198172598-6",
+        trackingId: process.env.ANALYTICS_TRACKING_ID,
       },
     },
     "gatsby-plugin-react-helmet",
@@ -17,7 +21,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        icon: "src/images/Closer.jpg",
       },
     },
     "gatsby-plugin-mdx",

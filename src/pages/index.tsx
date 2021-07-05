@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { graphql, Link } from "gatsby";
+import { graphql } from "gatsby";
 import * as style from "@/styles/index.module.scss";
 
 import { useFormik } from "formik";
@@ -48,7 +48,7 @@ const IndexPage = ({ data }) => {
       try {
         await axios({
           method: "POST",
-          url: "https://formspree.io/f/xoqylreo",
+          url: `${process.env.GATSBY_FORM_API}`,
           data: values,
         });
 

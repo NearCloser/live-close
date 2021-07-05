@@ -56,7 +56,7 @@
 
   .header_text {
     color: white;
-    font-size: 4rem;
+    font-size: 3.8rem;
 
     @media screen and (max-width: 500px) {
       font-size: 3.4rem;
@@ -70,7 +70,7 @@
 
   .desc_text {
     text-align: center;
-    max-width: 1024px;
+    max-width: 580px;
     padding-top: 2rem;
     color: white;
     line-height: 1.8;
@@ -269,7 +269,12 @@
 .main_wrapper {
   width: 100%;
   min-height: 100vh;
-  padding: 0rem 2rem 2rem;
+  padding: 0rem 3rem 2rem;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    padding: 0rem 1.5rem 2rem;
+  }
 
   @media screen and (max-width: 500px) {
     flex-direction: column;
