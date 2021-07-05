@@ -1,0 +1,41 @@
+.code_main_wrapper {
+  margin-bottom: 4rem;
+
+  .code_title {
+    padding: 1rem 1rem;
+
+    .code_title_text {
+      display: inline-block;
+      font-weight: 400;
+    }
+  }
+
+  .pre_main_wrapper {
+    position: relative;
+    border-radius: 8px;
+
+    .code_copy_btn {
+      position: absolute;
+      right: 1.2rem;
+      top: 1.4rem;
+
+      .copy_text {
+        padding: 0.5rem 1rem;
+        background-color: rgba(205, 206, 207, 0.432);
+        border-radius: 8px;
+        cursor: pointer;
+      }
+    }
+
+    overflow: auto;
+    padding: 1rem;
+
+    .pre_code {
+      float: left;
+      min-width: 100%;
+      font-weight: 300;
+      line-height: 1.4;
+      font-family: "Source Code Pro", monospace;
+    }
+  }
+}

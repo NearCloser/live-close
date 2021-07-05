@@ -1,0 +1,28 @@
+---
+title: Let me introduce myself
+slug: introduce-myself
+date: 2021-07-04
+excerpt: Let me intorduce myself in Five minutes!
+---
+
+# Who am I
+
+Hi. My name is Reo , Front engineer living in Japna.
+
+```js title=gatsb-text.js
+<div className={style.index_main_wrapper}>
+  {data.allMdx.edges.map(({ node }) => {  //highlight
+    return (
+      <article key={node.slug} className={style.article_wrapper}>
+        <Link to={`article/${node.slug}`}>
+          <h3 className={style.article_title}>{node.frontmatter.title}</h3>
+          <span>
+            {node.frontmatter.date} - {node.timeToRead} min
+          </span>
+          <p className={style.article_excerpt}>{node.frontmatter.excerpt}</p>
+        </Link>
+      </article>
+    );
+  })}
+</div>
+```

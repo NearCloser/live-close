@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-family: "Noto Sans JP", sans-serif;
+  color: rgb(63, 65, 71);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.highlight-line {
+  background-color: rgba(223, 228, 231, 0.363);
+  border-left: 0.45rem solid rgba(144, 250, 245, 0.959);
+  margin-left: -1rem;
+  padding-left: 0.45rem;
+}

@@ -24,6 +24,14 @@ module.exports = {
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
+      resolve: "gatsby-plugin-react-svg",
+      options: {
+        rule: {
+          include: /images/, // See below to configure properly
+        },
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
@@ -34,10 +42,18 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: "contents",
+        path: "./contents/",
       },
-      __key: "pages",
+      __key: "contents",
+    },
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@": "src",
+        },
+      },
     },
   ],
 };
