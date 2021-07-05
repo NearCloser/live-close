@@ -74,8 +74,9 @@ const IndexPage = ({ data }) => {
           <br />
           ライブストリーム
         </h1>
+        <p className={style.main_title}>Near Closer </p>
         <p className={style.desc_text}>
-          <span className={style.strong}>Tell me more</span>
+          <span className={style.strong}>Near Closer{` `}</span>
           とは、今までに自分が学んだことや得た知識を
           LIVE配信を通してシェアしていく新しいアウトプットコミュニティです。
         </p>
@@ -84,8 +85,7 @@ const IndexPage = ({ data }) => {
       <main className={style.main_wrapper}>
         <section className={style.offer_main_wrapper}>
           <div className={style.offer_wrapper}>
-            <h3 className={style.offer_main_text}>クルーを募集しています！</h3>
-            　
+            <h3 className={style.offer_main_text}>仲間を募集しています！</h3>　
             <div className={style.flow}>
               <div className={style.flow_block}>
                 <p>自分のペースでコーディングできます</p>

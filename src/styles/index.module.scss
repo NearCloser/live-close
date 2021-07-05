@@ -1,3 +1,10 @@
+.main_title {
+  color: white;
+  font-size: 1.8rem;
+  letter-spacing: 0.9rem;
+  opacity: 0.6;
+}
+
 .index_main_wrapper {
   max-width: 1024px;
   margin: 0 auto;
@@ -44,7 +51,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 4rem 2rem;
+  padding: 4rem 1rem;
   background-color: rgb(46, 84, 128);
 
   .header_text {
@@ -66,8 +73,8 @@
     max-width: 1024px;
     padding-top: 2rem;
     color: white;
-    line-height: 1.6;
-    letter-spacing: 0.048rem;
+    line-height: 1.8;
+    letter-spacing: 0.098rem;
     .strong {
       font-weight: 600;
       font-style: italic;
