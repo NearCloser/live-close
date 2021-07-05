@@ -7,6 +7,8 @@ import * as yup from "yup";
 import axios from "axios";
 import ReactLoading from "react-loading";
 
+import { Helmet } from "react-helmet";
+
 export const query = graphql`
   query {
     allMdx(sort: { fields: frontmatter___date, order: DESC }) {
@@ -67,6 +69,35 @@ const IndexPage = ({ data }) => {
       style={{ display: "flex", minHeight: "100vh" }}
       className={style._main_wrapper}
     >
+      <Helmet title={`Near Closer | LIVE配信を通して知識・技術をシェアしよう`}>
+        <meta
+          name="description"
+          content={`Near Closerとは、今までに自分が学んだことや得た知識をLIVE配信を通してシェアしていく、新しいアウトプットコミュニティです。`}
+        />
+        <meta property="og:url" content={`https://near-closer.jp`} />
+        <meta
+          property="og:title"
+          content={`Near Closer | LIVE配信を通して知識・技術をシェアしよう`}
+        />
+        <meta
+          property="og:description"
+          content={`Near Closerとは、今までに自分が学んだことや得た知識をLIVE配信を通してシェアしていく、新しいアウトプットコミュニティです。`}
+        />
+        <meta
+          property="og:image"
+          content={`https://live-closer.s3.ap-northeast-1.amazonaws.com/closer.png`}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:creator" content={`@near_closer`} />
+        <meta
+          name="twitter:title"
+          content={`Near Closer | LIVE配信を通して知識・技術をシェアしよう`}
+        />
+        <meta
+          name="twitter:image"
+          content={`https://live-closer.s3.ap-northeast-1.amazonaws.com/closer.png`}
+        />
+      </Helmet>
       <header className={style.header_wrapper}>
         <h1 className={style.header_text}>
           <span className={style.hehader_aside_text}>なーこぉと学ぶ</span>
